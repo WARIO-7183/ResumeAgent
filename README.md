@@ -66,6 +66,18 @@ Agents request JSON responses with `score` (0-10) and `explanation` fields for c
 | **JD Match** | Compares resume against job description |
 | **Aggregator** | Computes weighted average of all scores |
 
+## File Structure
+
+```
+├── resume.py              # Main pipeline code (standalone Python script)
+├── resume.ipynb           # Jupyter notebook version for experimentation
+├── langgraph_pipeline.py  # Additional pipeline utilities
+├── resume_collector.py    # Resume collection utilities
+├── supabase_client.py     # Supabase database client
+├── requirements.txt       # Python dependencies
+└── README.md
+```
+
 ## Setup
 
 ```bash
@@ -79,7 +91,15 @@ GROQ_API_KEY=your_key_here
 
 ## Usage
 
+### Running the Python script:
+```bash
+python resume.py
+```
+
+### Or import in your code:
 ```python
+from resume import create_resume_graph
+
 graph = create_resume_graph(
     skills=["python", "machine learning", "communication"],
     evaluate_experience=True,
