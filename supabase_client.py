@@ -3,8 +3,8 @@ import os
 from supabase import create_client, Client
 from langsmith import traceable
 
-SUPABASE_URL = "https://zvjccbffrrriwogsfpon.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp2amNjYmZmcnJyaXdvZ3NmcG9uIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NDE3MjE2NiwiZXhwIjoyMDc5NzQ4MTY2fQ.aZOpkeY9sQ2oqlN7wGovgP3435kp8nCEYKOpSuTIV8A"
+SUPABASE_URL = ""
+SUPABASE_KEY = ""
 SUPABASE_BUCKET = "resumes"
 
 if not SUPABASE_URL or not SUPABASE_KEY:
