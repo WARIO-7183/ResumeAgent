@@ -25,3 +25,13 @@ Thumbs.db
 # Logs
 *.log
 
+# Temp files
+temp_resumes/
+
+# Node/React
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# Backend
+backend/__pycache__/
